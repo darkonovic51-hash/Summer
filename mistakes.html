@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Path | أخطائي</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="mistakes.css">
+</head>
+<body>
+
+<div class="level-header">
+  <a href="home.html" class="back-btn">→</a>
+  <h1>📝 مراجعة أخطائي</h1>
+</div>
+
+<div id="emptyState" class="empty-state" style="display:none;">
+  <div class="empty-icon">✅</div>
+  <p>لا توجد أخطاء مسجلة حالياً</p>
+  <p class="empty-sub">كل الأسئلة التي تخطئ بها ستظهر هنا لمراجعتها</p>
+</div>
+
+<div id="mistakesIntro" class="mistakes-intro" style="display:none;">
+  <p><span id="mistakesCount">0</span> سؤال بحاجة لمراجعة</p>
+  <button id="reviewAllBtn" class="btn-primary">راجع الآن</button>
+</div>
+
+<div class="mistakes-list" id="mistakesList"></div>
+
+<nav class="bottom-nav">
+  <a href="home.html" class="nav-item">🏠<span>الرئيسية</span></a>
+  <a href="leaderboard.html" class="nav-item">🏆<span>الترتيب</span></a>
+  <a href="mistakes.html" class="nav-item active">📝<span>أخطائي</span></a>
+  <a href="profile.html" class="nav-item">👤<span>حسابي</span></a>
+</nav>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="levels-data.js"></script>
+<script src="questions_a1_vocabulary.js"></script>
+<script src="questions_a1_sentence.js"></script>
+<script src="questions_a1_synonyms.js"></script>
+<script src="questions_a1_grammar.js"></script>
+<script src="questions_a1_reading.js"></script>
+<script src="mistakes.js"></script>
+</body>
+</html>
