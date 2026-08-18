@@ -1,0 +1,62 @@
+/* mistakes.css */
+
+.empty-state {
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.empty-icon {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.empty-state .empty-sub {
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.mistakes-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(248,113,113,0.08);
+  border: 1px solid rgba(248,113,113,0.25);
+  border-radius: 16px;
+  margin: 20px;
+  padding: 16px;
+}
+
+.mistakes-intro p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mistakes-intro .btn-primary {
+  width: auto;
+  padding: 10px 18px;
+  font-size: 13px;
+}
+
+.mistakes-list {
+  padding: 0 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mistake-item {
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.mistake-item p {
+  font-size: 13px;
+  direction: ltr;
+  text-align: right;
+}
