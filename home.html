@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Path | الرئيسية</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-user">
+    <div class="avatar" id="avatarInitial"></div>
+    <div>
+      <p class="user-name" id="userNameDisplay"></p>
+      <p class="user-level" id="userLevelDisplay"></p>
+    </div>
+  </div>
+  <div class="topbar-stats">
+    <div class="stat-chip">🔥 <span id="streakCount">0</span></div>
+    <div class="stat-chip">⭐ <span id="xpCount">0</span></div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1 id="greeting" class="fade-in"></h1>
+  <p class="hero-sub">استمر في رحلتك نحو إتقان الإنجليزية</p>
+</div>
+
+<div class="daily-challenge-card" id="dailyChallengeBtn">
+  <div class="dc-icon">🎯</div>
+  <div class="dc-text">
+    <h3>التحدي اليومي</h3>
+    <p>5 أسئلة سريعة • XP مضاعف</p>
+  </div>
+  <div class="dc-arrow">←</div>
+</div>
+
+<h2 class="section-title">مسارك التعليمي</h2>
+
+<div class="levels-path" id="levelsPath"></div>
+
+<nav class="bottom-nav">
+  <a href="home.html" class="nav-item active">🏠<span>الرئيسية</span></a>
+  <a href="leaderboard.html" class="nav-item">🏆<span>الترتيب</span></a>
+  <a href="mistakes.html" class="nav-item">📝<span>أخطائي</span></a>
+  <a href="profile.html" class="nav-item">👤<span>حسابي</span></a>
+</nav>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="levels-data.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
