@@ -1,0 +1,107 @@
+/* profile.css */
+
+.profile-card {
+  text-align: center;
+  padding: 20px 20px 10px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 32px;
+  color: #0f172a;
+  margin: 0 auto 12px;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.profile-card p {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 20px;
+}
+
+.pstat-box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+.pstat-box h3 {
+  font-size: 22px;
+  color: #38bdf8;
+  margin-bottom: 4px;
+}
+
+.pstat-box p {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.profile-levels {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plevel-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.plevel-row .icon { font-size: 20px; }
+
+.plevel-row-info {
+  flex: 1;
+}
+
+.plevel-row-info p {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.badges-grid {
+  padding: 10px 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.badge-item {
+  aspect-ratio: 1;
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  opacity: 0.25;
+}
+
+.badge-item.earned {
+  opacity: 1;
+  background: rgba(250,204,21,0.15);
+  border: 1px solid rgba(250,204,21,0.4);
+}
