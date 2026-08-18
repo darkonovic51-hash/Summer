@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Path | الكويز</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="quiz-header">
+  <a href="#" id="exitQuiz" class="exit-btn">✕</a>
+  <div class="quiz-progress-bar">
+    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+  </div>
+  <div class="quiz-hearts">❤️ <span id="livesCount">3</span></div>
+</div>
+
+<div class="quiz-body" id="quizBody">
+  <p class="quiz-question-label">اختر المعنى الصحيح للجملة:</p>
+  <div id="passageBox" class="passage-box" style="display:none;"></div>
+  <h2 class="quiz-question" id="questionText"></h2>
+  <div class="options-grid" id="optionsGrid"></div>
+</div>
+
+<div class="quiz-footer">
+  <button id="checkBtn" class="btn-primary" disabled>تحقق</button>
+</div>
+
+<div id="milestoneScreen" class="milestone-overlay" style="display:none;">
+  <div class="milestone-card fade-in">
+    <div class="milestone-ring">
+      <svg width="140" height="140">
+        <circle cx="70" cy="70" r="60" class="ring-bg"/>
+        <circle cx="70" cy="70" r="60" class="ring-fill" id="ringFill"/>
+      </svg>
+      <div class="milestone-percent" id="milestonePercent">0%</div>
+    </div>
+    <h2 id="milestoneTitle">أحسنت!</h2>
+    <p id="milestoneSub"></p>
+
+    <div class="milestone-stats">
+      <div class="ms-stat"><span id="msCorrect">0</span><small>صحيحة</small></div>
+      <div class="ms-stat"><span id="msWrong">0</span><small>خاطئة</small></div>
+      <div class="ms-stat"><span id="msXp">0</span><small>XP+</small></div>
+    </div>
+
+    <button id="continueBtn" class="btn-primary">متابعة</button>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="levels-data.js"></script>
+<script src="questions_a1_vocabulary.js"></script>
+<script src="questions_a1_sentence.js"></script>
+<script src="questions_a1_synonyms.js"></script>
+<script src="questions_a1_grammar.js"></script>
+<script src="questions_a1_reading.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
