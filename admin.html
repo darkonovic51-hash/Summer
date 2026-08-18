@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Path | لوحة التحكم</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-login" id="adminLogin">
+  <div class="welcome-card fade-in">
+    <h1 class="brand-title">لوحة التحكم</h1>
+    <input type="password" id="adminPassword" placeholder="كلمة المرور">
+    <button id="adminLoginBtn" class="btn-primary">دخول</button>
+  </div>
+</div>
+
+<div class="admin-panel" id="adminPanel" style="display:none;">
+
+  <h1 class="admin-title">لوحة تحكم الأدمن</h1>
+
+  <div class="stats-grid">
+    <div class="stat-box"><h3 id="totalUsers">0</h3><p>إجمالي المستخدمين</p></div>
+    <div class="stat-box"><h3 id="activeToday">0</h3><p>نشط اليوم</p></div>
+    <div class="stat-box"><h3 id="avgXp">0</h3><p>متوسط XP</p></div>
+    <div class="stat-box"><h3 id="totalQuestions">0</h3><p>إجمالي الأسئلة بالموقع</p></div>
+  </div>
+
+  <h2 class="section-title">قائمة المستخدمين</h2>
+  <div class="users-table" id="usersTable"></div>
+
+  <div id="userDetailModal" class="modal-overlay" style="display:none;">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="levels-data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
