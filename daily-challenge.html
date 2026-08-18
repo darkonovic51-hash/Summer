@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Path | التحدي اليومي</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="quiz.css">
+<link rel="stylesheet" href="daily.css">
+</head>
+<body>
+
+<div id="alreadyDoneScreen" class="daily-done-screen" style="display:none;">
+  <div class="dd-icon">🎉</div>
+  <h2>أكملت التحدي اليوم!</h2>
+  <p>عد غداً لتحدٍ جديد ومحافظة على الـ Streak</p>
+  <a href="home.html" class="btn-primary" style="display:block; text-decoration:none; text-align:center;">العودة للرئيسية</a>
+</div>
+
+<div id="dailyQuizArea">
+  <div class="quiz-header">
+    <a href="home.html" class="exit-btn">✕</a>
+    <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="dailyProgressFill"></div></div>
+    <div class="dc-badge">🎯 يومي</div>
+  </div>
+
+  <div class="quiz-body">
+    <p class="quiz-question-label">اختر المعنى الصحيح للجملة:</p>
+    <h2 class="quiz-question" id="dailyQuestionText"></h2>
+    <div class="options-grid" id="dailyOptionsGrid"></div>
+  </div>
+
+  <div class="quiz-footer">
+    <button id="dailyCheckBtn" class="btn-primary" disabled>تحقق</button>
+  </div>
+</div>
+
+<div id="dailyMilestone" class="milestone-overlay" style="display:none;">
+  <div class="milestone-card fade-in">
+    <div class="milestone-ring">
+      <svg width="140" height="140">
+        <circle cx="70" cy="70" r="60" class="ring-bg"/>
+        <circle cx="70" cy="70" r="60" class="ring-fill" id="dailyRingFill"/>
+      </svg>
+      <div class="milestone-percent" id="dailyMilestonePercent">0%</div>
+    </div>
+    <h2>🎯 تحدي اليوم اكتمل!</h2>
+    <p id="dailyMilestoneSub"></p>
+    <div class="milestone-stats">
+      <div class="ms-stat"><span id="dailyMsCorrect">0</span><small>صحيحة</small></div>
+      <div class="ms-stat"><span id="dailyMsXp">0</span><small>XP+ (مضاعف)</small></div>
+    </div>
+    <a href="home.html" class="btn-primary" style="display:block; text-decoration:none; text-align:center;">العودة للرئيسية</a>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="questions_a1_vocabulary.js"></script>
+<script src="daily-challenge.js"></script>
+</body>
+</html>
